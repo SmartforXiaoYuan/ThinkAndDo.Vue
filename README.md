@@ -1,24 +1,74 @@
-# thinkdo.vue
+# ThinkAndDo.vue
 
-## Project setup
+一个基于 Vue.js 的后台管理系统项目，目前正在开发，为了学习前端，主要是想到就写的电商系统，以后会增加更多功能，持续开发中...。
+
+这里仅仅是vue项目
+
+## 给个星星! ⭐️
+
+如果你喜欢这个项目或者它帮助你, 请给 Star~（辛苦星咯）
+
+------
+
+### 项目下载后，首先安装依赖包
+
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 安装成功后，运行即可
+
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 如果要部署，先执行bulid
+
 ```
 npm run build
 ```
 
-### Run your unit tests
-```
-npm run test:unit
-```
+------
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 技术栈
+
+- API：node.js
+- 后台管理站点：Vue + Element+IView
+- 数据库访问层： 
+- 数据库：MongoDB
+- 缓存：支持Redis和进程内缓存 （优先级会比较低）
+- 支持Docker和K8S部署
+
+## 功能特性
+
+### 前台站点
+
+- [ ]  电商首页
+- [ ]  登录页面
+- [ ]  注册页面
+- [ ]  产品列表页
+- [ ]  产品详细页
+- [ ]  购物车页面
+- [ ]  订购页面
+- [ ]  支付页面
+- [ ]  成功页面
+- [ ]  商家页面
+- [ ]  用户页面
+- [ ]  站内搜索
+
+### 管理后台
+
+- [ ]  用户登录
+- [ ]  新闻分类管理
+- [ ]  新闻管理、编辑
+- [ ]  专栏管理
+- [ ]  LOGO管理
+- [ ]  页面广告管理（轮播、Banner)
+- [ ]  页面静态化支持
+- [ ]  网站访问限制（IP黑白名单）
+- [ ]  全站备份（手动）
+- [ ]  访问统计
+- [ ]  管理员新增删除
+- [ ]  管理员权限设置
+- [ ]  全站备份（定时）
+- [ ]  剩下的还没想好，但是功能不会太多...
