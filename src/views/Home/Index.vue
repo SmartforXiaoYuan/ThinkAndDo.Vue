@@ -29,7 +29,8 @@
               </router-link>
             </div>
             <div class="list">
-              <MyList :list="phoneList" :isMore="true"></MyList>
+              <!-- <MyList :list="phoneList" :isMore="true"></MyList> -->
+              <my-list :list="phoneList" :isMore="true"></my-list>
             </div>
           </div>
         </div>
@@ -41,7 +42,7 @@
 
 <script>
 import axios from "@/libs/api.request";
-// import axios from 'axios'
+import MyList from "_c/MyList";
 
 export default {
   // 组件名称
@@ -49,7 +50,9 @@ export default {
   // 组件参数 接收来自父组件的数据
   props: {},
   // 局部注册的组件
-  components: {},
+  components: {
+    MyList
+  },
   // 组件状态值
   data() {
     return {
@@ -79,7 +82,7 @@ export default {
         .request({
           url: api,
           method: "post",
-          data: {"categoryName":categoryName}
+          data: { categoryName: categoryName }
         })
         .then(res => {
           this[val] = res.data.Product;
